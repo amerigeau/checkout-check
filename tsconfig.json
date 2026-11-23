@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["ES2022"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["src", "tests", "scripts", "vitest.config.ts", "playwright.config.ts"]
+}

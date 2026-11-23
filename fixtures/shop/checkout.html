@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Checkout</title>
+  </head>
+  <body data-ordered="no">
+    <h1 class="checkout-title">Checkout</h1>
+    <p>Shipping and payment stay untouched. This page is the end of the check.</p>
+    <form id="checkout" action="/order-received.html" method="get">
+      <label>Email <input name="email" type="email" value="buyer@example.com" /></label>
+      <button class="place-order" type="submit">Place order</button>
+    </form>
+    <script>
+      document.getElementById('checkout').addEventListener('submit', () => {
+        document.body.dataset.ordered = 'yes'
+      })
+    </script>
+  </body>
+</html>

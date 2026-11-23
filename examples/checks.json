@@ -1,0 +1,19 @@
+{
+  "concurrency": 2,
+  "screenshotDir": "artifacts/screenshots",
+  "checks": [
+    {
+      "name": "fixture-shop",
+      "platform": "woocommerce",
+      "baseUrl": "http://127.0.0.1:4173",
+      "productPath": "/product.html",
+      "cartPath": "/cart.html",
+      "timeoutMs": 10000,
+      "selectors": {
+        "addToCart": "button.single_add_to_cart_button",
+        "checkoutLink": "a.checkout-button",
+        "checkoutReady": "h1.checkout-title"
+      }
+    }
+  ]
+}
