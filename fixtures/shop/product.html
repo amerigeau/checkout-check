@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Sample mug</title>
+  </head>
+  <body>
+    <h1>Sample mug</h1>
+    <p>Plain ceramic mug used by the checkout fixture. Price is fictional.</p>
+    <button class="single_add_to_cart_button" type="button">Add to cart</button>
+    <script>
+      document.querySelector('.single_add_to_cart_button').addEventListener('click', () => {
+        location.href = '/cart.html'
+      })
+    </script>
+  </body>
+</html>
